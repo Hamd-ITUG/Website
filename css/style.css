@@ -1,0 +1,95 @@
+body {
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+    color: #252525;
+    /* background: url(/static/img/bg.jpg?c38d26e861e7) repeat; */
+    margin: 0;
+}
+
+body header {
+	height: 125px;
+	background: #ededed;
+}
+
+body header .center {
+    justify-content: space-between;
+}
+
+body header .center #logo {
+    height: 55px;
+    width: 215px;
+    background: url(/images/logo1.png) no-repeat 8px 12px #fff;
+    text-indent: -99999px;
+    background-size: 200px;
+    box-shadow: 0 0 3px 0 #707070;
+}
+
+body header .center nav {
+    margin-top: 75px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+body header .center nav a.active {
+    color: #f9f9f9;
+    background: #e26b26;
+    padding: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #173451;
+}
+
+a {
+    background: transparent;
+}
+
+body header .center nav a:hover, .navbar-default .navbar-nav>.active>a {
+    border-bottom: 0px solid #173451;
+}
+body header .center nav a:hover {
+    border-bottom: 3px solid #173451;
+}
+
+
+b
+
+body main {
+	background: white;
+}
+
+.navbar-default {
+	background: transparent;
+    background-color: rgba(0,0,0,0);
+    border-color: transparent;
+}
+
+.center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+@media (min-width: 750px) {
+.center {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+}
+
+@media (min-width: 1024px) {
+.center {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+body footer {
+	background: grey;
+}
