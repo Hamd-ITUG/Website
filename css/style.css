@@ -1,70 +1,20 @@
+/* general styling rules */
 body {
     font-family: 'Ubuntu',sans-serif;
     font-weight: 300;
-    font-size: .8em;
+    font-size: 1.1em;
     color: #252525;
-    /* background: url(/static/img/bg.jpg?c38d26e861e7) repeat; */
     margin: 0;
 }
 
-body header {
-	height: 125px;
-	background: #ededed;
-}
-
-body header .center {
-    justify-content: space-between;
-}
-
-body header .center #logo {
-    height: 55px;
-    width: 215px;
-    background: url(/images/logo1.png) no-repeat 8px 12px #fff;
-    text-indent: -99999px;
-    background-size: 200px;
-    box-shadow: 0 0 3px 0 #707070;
-}
-
-body header .center nav {
-    margin-top: 75px;
-    font-family: 'Raleway',sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-}
-
-body header .center nav a.active {
-    color: #f9f9f9;
-    background: #e26b26;
-    padding: 15px;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #173451;
+a:hover {
+    border-bottom: 1px dotted #252525;
+    outline: none;
 }
 
 a {
     background: transparent;
-}
-
-body header .center nav a:hover, .navbar-default .navbar-nav>.active>a {
-    border-bottom: 0px solid #173451;
-}
-body header .center nav a:hover {
-    border-bottom: 3px solid #173451;
-}
-
-
-b
-
-body main {
-	background: white;
-}
-
-.navbar-default {
-	background: transparent;
-    background-color: rgba(0,0,0,0);
-    border-color: transparent;
+    color: #252525;
 }
 
 .center {
@@ -90,6 +40,189 @@ body main {
 }
 }
 
+/* header section */
+body header {
+	height: 125px;
+	background: #ededed;
+	box-shadow: inset 0 -6px 30px -9px #2e3e75;
+}
+
+body header .center {
+    justify-content: space-between;
+}
+
+body header .center #logo {
+    height: 55px;
+    width: 215px;
+    background: url(/images/logo1.png) no-repeat 8px 12px #fff;
+    text-indent: -9000px;
+    background-size: 200px;
+    box-shadow: 0 0 3px 0 #707070;
+    margin-top: 85px;
+}
+
+@media (max-width: 768px) {
+	body main .row-1-icon {
+	    display:none;
+	}
+}
+
+body header .center nav {
+    margin-top: 75px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+body header .center nav a.active {
+    color: #f9f9f9;
+    background: #e26b26;
+    padding: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #173451;
+}
+
+body header .center nav a:hover, .navbar-default .navbar-nav>.active>a {
+    border-bottom: 0px solid #173451;
+}
+
+body header .center nav a:hover {
+    border-bottom: 3px solid #173451;
+}
+
+.navbar-default {
+	background: transparent;
+    background-color: rgba(0,0,0,0);
+    border-color: transparent;
+}
+
+/* main section */
+body main {
+	background: url(/images/image02.jpg) no-repeat;
+	background-size:cover;
+	height: auto;
+    width: 100%;
+    border-bottom: 30px solid #173451;
+}
+
+body main .dark-box {
+    color: #173451;
+    background-color: rgba(255, 255, 255, 0.66);
+    padding: 5% 1.5% 5% 3.5%;
+    display: inline-block;
+}
+
+body main .row-1 {
+    padding: 10% 0 5% 0;
+}
+
+body main .row-1-icon {
+	padding-right:5px;
+}
+
+body main .row-1 .fa-file-code-o:before {
+    font-size: 166px;
+    font-weight:600;
+    color: rgba(255, 255, 255, 0.32);
+}
+
+body main .row-1 .fa {
+    float:right;
+    padding-right:0px;
+}
+
+body main .main-col {
+	background: white;
+    min-height: 245px;
+    transition: background .8s ease-in;
+    padding:35px;
+    background-clip: padding-box;
+    margin-bottom:30px;
+}
+
+body main .main-col:hover {
+    background: #EDEDED;
+    background-clip: padding-box;
+}
+
+body main .main-col-left {
+    border-right: 30px solid transparent;
+}
+
+body main .main-col-left:hover {
+    border-right: 30px solid transparent;
+}
+
+body main .main-col-center {
+    border-right: 15px solid transparent;
+}
+
+body main .main-col-center:hover {
+	border-right: 15px solid transparent;
+}
+
+body main .main-col-right {
+    border-left: 15px solid transparent;
+}
+
+body main .main-col-right:hover {
+	border-left: 15px solid transparent;
+}
+
+
+body main .main-col dt {
+	font-family: 'Raleway',sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/* footer section */
+
+body footer .row {
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 body footer {
-	background: grey;
+	background: #dedede;
+}
+
+body footer dl {
+	font-family: 'Raleway',sans-serif;
+}
+
+body footer .center dl dt {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+body footer dl {
+	font-size:16px;
+	font-weight:400;
+	margin: 10px 0;
+}
+
+body footer .footer-col {
+    margin-bottom: 3%;
+    padding: 3.5%;
+	margin-top:35px;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+
+body footer .center dl.contact dd .fa:before {
+    float: left;
+    font-size: 22px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+body footer .center dl.contact dd {
+    height: 35px;
+    line-height: 23px;
 }
